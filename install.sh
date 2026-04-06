@@ -20,3 +20,4 @@ export PATH="$HOME/.local/bin:$PATH"
 
 bash "$SCRIPT_DIR/scripts/05_configure_secrets.sh"
 bash "$SCRIPT_DIR/scripts/06_configure_hermes.sh"
+bash "$SCRIPT_DIR/scripts/07_install_services.sh"
