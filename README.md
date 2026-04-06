@@ -53,6 +53,11 @@ ssh hermes_box
 
 Now you can execute the same steps as if you had local access from the section above (clone the repo, cd into hermes-homelab, execute the install.sh script)
 
+## Related Projects
+
+- [Hermes Agent](https://github.com/nousresearch/hermes-agent)
+- [Converting an HP ProDesk 600 G2 (Proxmox) to Ubuntu Desktop](https://gist.github.com/bcolb/a201e1bb66e167cb1f2ca62b83c16a5a)
+
 ## License 
 
 MIT
