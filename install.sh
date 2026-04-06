@@ -11,3 +11,4 @@ echo "Hermes Homelab Installation"
 echo ""
 
 bash "$SCRIPT_DIR/scripts/01_system_baseline.sh"
+bash "$SCRIPT_DIR/scripts/02_install_ollama.sh"
