@@ -10,7 +10,13 @@ This repository contains scripts to setup local AI models/LLMs and run [Hermes A
 
 ### Install directly from the target machine
 
-Open up the terminal. Run the following to clone this repository:
+Open up the terminal. 
+
+Git is a prerequisite, install it first
+
+```sudo apt install -y git```
+
+Run the following to clone this repository
 
 ```git clone https://github.com/bcolb/hermes-homelab```
 
