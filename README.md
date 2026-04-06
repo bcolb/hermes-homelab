@@ -88,7 +88,7 @@ hermes model
 - Select **Custom endpoint**
 - Base URL: `http://localhost:11434/v1`
 - API key: `ollama` (literal string — Ollama doesn't require a real key)
-- Model: `hermes3:8b`
+- Model: `qwen2.5:7b`
 
 To verify Ollama is reachable before entering the URL:
 ```bash
@@ -128,17 +128,15 @@ hermes model
 ```
 
 Available local models (pulled in step 3):
-- `hermes3:8b` — primary, best tool-calling (recommended)
-- `qwen2.5:7b` — strong alternative
-- `hermes3:3b` — lightweight fallback, faster but weaker reasoning
+- `qwen2.5:7b` — primary, strong tool-calling support (recommended)
+- `hermes3:8b` — available for experimentation, but lacks tool-calling capabilities required by Hermes Agent
+- `hermes3:3b` — same caveat as above, lighter weight
 
 ### Adding API fallback (optional)
 
 For tasks where the local model isn't sufficient, add an API key to `~/.hermes/.env`:
 
 ```bash
-echo 'ANTHROPIC_API_KEY=your-key-here' >> ~/.hermes/.env
-# or
 echo 'OPENROUTER_API_KEY=your-key-here' >> ~/.hermes/.env
 ```
 

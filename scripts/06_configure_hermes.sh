@@ -14,10 +14,10 @@ fi
 
 hermes config set model.provider custom
 hermes config set model.base_url http://localhost:11434/v1
-hermes config set model.default hermes3:8b
+hermes config set model.default qwen2.5:7b
 
 echo "  Hermes configured to use local Ollama endpoint."
 echo "  Provider: custom"
 echo "  Base URL: http://localhost:11434/v1"
-echo "  Model:    hermes3:8b"
+echo "  Model:    qwen2.5:7b"
 echo "[6/7] Hermes configuration complete."

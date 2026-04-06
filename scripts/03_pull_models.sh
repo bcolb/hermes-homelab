@@ -10,14 +10,13 @@ set -euo pipefail
 
 echo "[3/7] Pulling Ollama models..."
 
-# Primary — Hermes 3 8B, tuned for agentic tool calling
-ollama pull hermes3:8b
-
-# Lighter alternative if memory is tight
-ollama pull hermes3:3b
-
-# Alternative with strong tool-calling support
+# Primary — strong tool-calling support, recommended for Hermes Agent
 ollama pull qwen2.5:7b
+
+# Available for experimentation — NOTE: hermes3 models lack tool-calling
+# capabilities and are not suitable as the default model for Hermes Agent
+ollama pull hermes3:8b
+ollama pull hermes3:3b
 
 echo "  Models available:"
 ollama list
