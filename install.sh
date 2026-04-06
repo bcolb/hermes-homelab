@@ -12,3 +12,4 @@ echo ""
 
 bash "$SCRIPT_DIR/scripts/01_system_baseline.sh"
 bash "$SCRIPT_DIR/scripts/02_install_ollama.sh"
+bash "$SCRIPT_DIR/scripts/03_pull_models.sh"
