@@ -9,7 +9,7 @@ echo "[1/7] System baseline..."
 
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y git curl
+sudo apt install -y git curl tmux htop
 
 if ! command -v git &>/dev/null; then
     echo "ERROR: git installation failed." >&2
