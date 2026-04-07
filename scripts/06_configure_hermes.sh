@@ -15,9 +15,11 @@ fi
 hermes config set model.provider custom
 hermes config set model.base_url http://localhost:11434/v1
 hermes config set model.default qwen2.5:7b
+hermes config set model.timeout 600
 
 echo "  Hermes configured to use local Ollama endpoint."
 echo "  Provider: custom"
 echo "  Base URL: http://localhost:11434/v1"
 echo "  Model:    qwen2.5:7b"
+echo "  Timeout:  600s (accommodates slow CPU inference)"
 echo "[6/7] Hermes configuration complete."
