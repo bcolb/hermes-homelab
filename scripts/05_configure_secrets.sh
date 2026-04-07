@@ -27,8 +27,8 @@ mkdir -p "$HOME/.hermes"
 touch "$HERMES_ENV"
 
 if [[ -n "${OPENROUTER_API_KEY:-}" ]]; then
-    if grep -q "OPENROUTER_API_KEY" "$HERMES_ENV"; then
-        sed -i "s|OPENROUTER_API_KEY=.*|OPENROUTER_API_KEY=$OPENROUTER_API_KEY|" "$HERMES_ENV"
+    if grep -q "^OPENROUTER_API_KEY=" "$HERMES_ENV"; then
+        sed -i "s|^OPENROUTER_API_KEY=.*|OPENROUTER_API_KEY=$OPENROUTER_API_KEY|" "$HERMES_ENV"
     else
         echo "OPENROUTER_API_KEY=$OPENROUTER_API_KEY" >> "$HERMES_ENV"
     fi
